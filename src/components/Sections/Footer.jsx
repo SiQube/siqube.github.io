@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
-  return (
-    <footer className="py-12 text-center text-gray-500">&copy; {new Date().getFullYear()} David R. Reich.</footer>
-  )
+	return (
+		<footer className="py-12 text-center text-gray-500">
+			&copy; {new Date().getFullYear()} David R. Reich.
+		</footer>
+	);
 }
-

@@ -119,6 +119,7 @@ export default function Teaching() {
 								<p className="text-sm text-gray-500 mb-3">2022 - present</p>
 								<ul className="space-y-2">
 									<li className="text-sm"><strong className="text-gray-900">Advanced Machine Learning:</strong> Preparing students to be research ready.</li>
+									<p className="text-sm text-gray-500 mb-3">2021 - 2022</p>
 									<li className="text-sm"><strong className="text-gray-900">Eye tracking: Experiment design and ML:</strong> Practical course from experiment design to modeling eye-tracking data.</li>
 								</ul>
 							</div>

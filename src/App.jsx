@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Cursor from "./components/Cursor";
+import Disclaimer from "./components/Disclaimer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import About from "./components/Sections/About";
@@ -8,6 +9,7 @@ import Footer from "./components/Sections/Footer";
 import MediaGallery from "./components/Sections/MediaGallery";
 import Publications from "./components/Sections/Publications";
 import Teaching from "./components/Sections/Teaching";
+
 
 const sections = [
 	{ id: "home", label: "Home" },
@@ -24,19 +26,8 @@ export default function App() {
 	const cursorRef = useRef(null);
 	const galleryRef = useRef(null);
 
-	// Parallax for hero
-	useEffect(() => {
-		const handleScroll = () => {
-			if (!heroRef.current) return;
-			const rect = heroRef.current.getBoundingClientRect();
-			const offset = Math.max(-rect.top, 0);
-			heroRef.current.style.backgroundPosition = `center ${50 + offset * 0.02}%`;
-			heroRef.current.style.transform = `translateY(${offset * 0.02}px)`;
-		};
-		handleScroll();
-		window.addEventListener("scroll", handleScroll, { passive: true });
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, []);
+	// Parallax for hero - Removed as it is now handled internally in Hero.jsx
+	// to prevent layout issues with overlapping sections.
 
 	// Reveal on scroll
 	useEffect(() => {
@@ -66,7 +57,7 @@ export default function App() {
 
 	// Active section observer
 	useEffect(() => {
-		const opts = { root: null, rootMargin: "0px", threshold: 0.45 };
+		const opts = { root: null, rootMargin: "-50% 0px -50% 0px", threshold: 0 };
 		const obs = new IntersectionObserver((entries) => {
 			for (const ent of entries) {
 				if (ent.isIntersecting) setActive(ent.target.id);
@@ -133,6 +124,7 @@ export default function App() {
 
 	return (
 		<div className="font-sans text-gray-900 antialiased">
+			<Disclaimer />
 			<Cursor ref={cursorRef} />
 			<Nav sections={sections} active={active} onNavigate={scrollToSection} />
 

@@ -57,7 +57,7 @@ export default function MediaGallery({ galleryRef }) {
 									className="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-colors"
 								>
 									<div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
-										<svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+										<svg className="w-6 h-6 text-ikb-600" fill="currentColor" viewBox="0 0 24 24">
 											<path d="M8 5v14l11-7z" />
 										</svg>
 									</div>
@@ -75,7 +75,7 @@ export default function MediaGallery({ galleryRef }) {
 										href={item.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700"
+										className="inline-flex items-center text-sm font-medium text-ikb-600 hover:text-ikb-700"
 									>
 										Watch Recording
 										<svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

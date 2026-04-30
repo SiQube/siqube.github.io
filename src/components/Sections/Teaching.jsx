@@ -56,7 +56,7 @@ export default function Teaching() {
 						<h2 className="text-3xl font-semibold mb-8 md:text-left">Teaching</h2>
 						<div className="grid md:grid-cols-2 gap-12 text-gray-700">
 							<div>
-								<h3 className="font-medium text-xl mb-4 text-blue-600">Current</h3>
+								<h3 className="font-medium text-xl mb-4 text-ikb-600">Current</h3>
 								<ul className="space-y-3">
 									<li className="flex items-start">
 										<span className="mr-2">•</span>
@@ -69,7 +69,7 @@ export default function Teaching() {
 								</ul>
 							</div>
 							<div>
-								<h3 className="font-medium text-xl mb-4 text-blue-600">Previous</h3>
+								<h3 className="font-medium text-xl mb-4 text-ikb-600">Previous</h3>
 								<ul className="space-y-3">
 									<li className="flex items-start">
 										<span className="mr-2">•</span>
@@ -104,7 +104,7 @@ export default function Teaching() {
 					>
 						<h2 className="text-3xl font-semibold mb-8 md:text-left">Teaching History</h2>
 						<div className="text-gray-700 space-y-8">
-							<div className="border-l-4 border-blue-200 pl-6 ml-2">
+							<div className="border-l-4 border-ikb-200 pl-6 ml-2">
 								<h3 className="font-medium text-xl">University of Potsdam</h3>
 								<p className="text-sm text-gray-500 mb-3">2020 - Present</p>
 								<ul className="space-y-2">
@@ -114,7 +114,7 @@ export default function Teaching() {
 								</ul>
 							</div>
 
-							<div className="border-l-4 border-blue-200 pl-6 ml-2">
+							<div className="border-l-4 border-ikb-200 pl-6 ml-2">
 								<h3 className="font-medium text-xl">University of Zurich</h3>
 								<p className="text-sm text-gray-500 mb-3">2022 - present</p>
 								<ul className="space-y-2">

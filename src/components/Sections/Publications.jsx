@@ -116,14 +116,14 @@ function SynthesizedAnimation() {
 				{images.map((_, index) => (
 					<div
 						key={index}
-						className={`h-1 rounded-full transition-all duration-500 ${step === index ? 'w-8 bg-blue-500' : 'w-2 bg-gray-600'}`}
+						className={`h-1 rounded-full transition-all duration-500 ${step === index ? 'w-8 bg-ikb-500' : 'w-2 bg-gray-600'}`}
 					/>
 				))}
 			</div>
 
 			{/* Label Overlay */}
 			<div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
-				<p className="text-blue-200 text-sm font-mono transition-all duration-500">
+				<p className="text-ikb-200 text-sm font-mono transition-all duration-500">
 					{step === 0 && "> Ingesting Text Data..."}
 					{step === 1 && "> Neural Network Analysis..."}
 					{step === 2 && "> Generating Eye Movements..."}
@@ -150,7 +150,7 @@ export default function Publications() {
 							href="https://scholar.google.com/citations?user=Tc-NKJgAAAAJ&hl=de"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-blue-600 hover:underline"
+							className="text-ikb-600 hover:underline"
 						>
 							View all publications on Google Scholar.
 						</a>
@@ -178,7 +178,7 @@ export default function Publications() {
 								{/* Category Header */}
 								<div className="mb-4 flex-shrink-0 flex justify-between items-end border-b border-gray-100 pb-4">
 									<div>
-										<span className="text-blue-600 font-bold tracking-wider text-sm uppercase mb-1 block">Research Category</span>
+										<span className="text-ikb-600 font-bold tracking-wider text-sm uppercase mb-1 block">Research Category</span>
 										<h3 className="text-3xl font-bold text-gray-900">{category.name}</h3>
 									</div>
 									<button
@@ -208,7 +208,7 @@ export default function Publications() {
 														className="w-full h-full object-cover opacity-80"
 													/>
 													<div className="absolute inset-0 pointer-events-none">
-														<div className="absolute w-full h-1 bg-blue-400/30 shadow-[0_0_15px_rgba(59,130,246,0.6)] animate-scanline top-0 left-0" />
+														<div className="absolute w-full h-1 bg-ikb-400/30 shadow-[0_0_15px_rgba(0,47,167,0.6)] animate-scanline top-0 left-0" />
 													</div>
 													<div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
 														<p className="text-emerald-200 text-sm font-mono">Image by banana via antigravity...</p>
@@ -220,16 +220,16 @@ export default function Publications() {
 										{/* Info Column */}
 										<div className="h-full overflow-y-auto p-8 bg-white">
 											<div className="mb-6">
-												<span className="inline-block px-2 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded mb-2">Featured Paper</span>
+												<span className="inline-block px-2 py-1 bg-ikb-50 text-ikb-700 text-xs font-semibold rounded mb-2">Featured Paper</span>
 												<h4 className="text-xl font-bold text-gray-900 leading-tight">{featuredPaper.title}</h4>
 												<p className="text-gray-500 text-sm mt-2 flex flex-wrap gap-x-3 gap-y-1 items-center">
 													<span>{featuredPaper.venue}</span>
 													<span className="text-gray-300">•</span>
-													<a href={featuredPaper.links.project} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+													<a href={featuredPaper.links.project} className="text-ikb-600 hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
 													<span className="text-gray-300">•</span>
-													<a href={featuredPaper.links.paper} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">View Paper</a>
+													<a href={featuredPaper.links.paper} className="text-ikb-600 hover:underline" target="_blank" rel="noopener noreferrer">View Paper</a>
 													<span className="text-gray-300">•</span>
-													<a href={featuredPaper.links.github} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+													<a href={featuredPaper.links.github} className="text-ikb-600 hover:underline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
 												</p>
 											</div>
 
@@ -247,7 +247,7 @@ export default function Publications() {
 											</div>
 
 											<div className="mt-8">
-												<a href={featuredPaper.links.pdf} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-4 py-2 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition-colors">Read PDF</a>
+												<a href={featuredPaper.links.pdf} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-4 py-2 bg-ikb-600 text-white rounded-md font-medium hover:bg-ikb-700 transition-colors">Read PDF</a>
 											</div>
 										</div>
 									</div>
@@ -262,18 +262,18 @@ export default function Publications() {
 
 											<div className="grid gap-6">
 												{category.papers.map(paper => (
-													<div key={paper.id} className="flex gap-6 p-6 rounded-xl border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white group">
+													<div key={paper.id} className="flex gap-6 p-6 rounded-xl border border-gray-100 hover:border-ikb-200 hover:shadow-md transition-all bg-white group">
 														<div className="w-32 h-32 flex-shrink-0 bg-gray-100 rounded-lg overflow-hidden">
 															<img src={paper.image} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 														</div>
 														<div>
-															<h5 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{paper.title}</h5>
+															<h5 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-ikb-600 transition-colors">{paper.title}</h5>
 															<div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 mb-3">
 																<span className="font-medium bg-gray-100 px-2 py-0.5 rounded">{paper.venue}</span>
-																<a href={paper.links.project} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">Project</a>
-																<a href={paper.links.paper} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">Paper</a>
-																<a href={paper.links.github} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">GitHub</a>
-																<a href={paper.links.pdf} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">PDF</a>
+																<a href={paper.links.project} target="_blank" rel="noopener noreferrer" className="hover:text-ikb-600 hover:underline">Project</a>
+																<a href={paper.links.paper} target="_blank" rel="noopener noreferrer" className="hover:text-ikb-600 hover:underline">Paper</a>
+																<a href={paper.links.github} target="_blank" rel="noopener noreferrer" className="hover:text-ikb-600 hover:underline">GitHub</a>
+																<a href={paper.links.pdf} target="_blank" rel="noopener noreferrer" className="hover:text-ikb-600 hover:underline">PDF</a>
 															</div>
 															<p className="text-gray-600 line-clamp-2 text-sm">{paper.abstract}</p>
 														</div>
